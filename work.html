@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin-top: 50px;
+            padding: 0;
+        }
+        .parent{
+            height: 100vh;
+            display: flex;
+            justify-content:center;
+            gap: 10px;
+            background-color: whitesmoke
+        }
+        .Box{
+            border: 1px solid rgb(98, 96, 96);
+            border:10ch;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            box-shadow: inset;
+        }
+        #Box-1{
+            width: 200px;
+        }
+        #Box-3{
+            width: 200px;
+        }
+        #Box-2{
+            width: 200px;
+        }
+        button{
+            height: 40px;
+            width: 80px;
+            background-color: rgb(105, 200, 105);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="parent">
+        <div class="Box" id="Box-1">
+            <h1>Basic</h1>
+            <p>$10/month</p>
+            <p>Feature</p>
+            <button>Sign Up</button>
+        </div>
+        <div class="Box" id="Box-2">
+            <h1>Premium</h1>
+            <p>$30/month</p>
+            <p>Feature</p>
+            <button>Sign Up</button>
+        </div>
+        <div class="Box" id="Box-3">
+            <h1>Pro</h1>
+            <p>$50/month</p>
+            <p>Feature</p>
+            <button>Sign Up</button>
+        </div>
+    </div>
 </body>
 </html>

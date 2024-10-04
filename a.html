@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+
+    }
+    .parent{
+        border: 2px solid red;
+        height: 500px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: aquamarine;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: space-between;
+    }
+    .Box{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid blue;
+        height: 100px;
+        width: 100px;
+        background-color: green;
+
+    }
+    #Box-2{
+        flex-shrink: 2;
+    align-self: auto;
+    }
+   </style>
 </head>
 <body>
     
+    <div class ="parent">
+        <div class = "Box" id = "Box-1">Box-1</div>
+        <div class = "Box" id = "Box-2">Box-2</div>
+        <div class = "Box" id = "Box-3">Box-2</div>
+        <div class = "Box" id = "Box-4">Box-4</div>
+        <div class = "Box" id = "Box-5">Box-5</div>
+    </div>
 </body>
 </html>
